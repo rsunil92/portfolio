@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Profile photo placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbe7f5"/>
+      <stop offset="1" stop-color="#c7d6ec"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a66c2"/>
+      <stop offset="1" stop-color="#123c63"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <circle cx="100" cy="100" r="100"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="200" height="200" fill="url(#bg)"/>
+    <circle cx="46" cy="42" r="60" fill="#ffffff" opacity=".28"/>
+
+    <!-- shoulders -->
+    <path d="M22 200c0-38 35-62 78-62s78 24 78 62z" fill="url(#body)"/>
+    <!-- collar -->
+    <path d="M84 142l16 20 16-20 12 6-28 34-28-34z" fill="#ffffff" opacity=".22"/>
+    <!-- neck -->
+    <path d="M85 118h30v26a15 15 0 0 1-30 0z" fill="#e8b894"/>
+    <!-- head -->
+    <circle cx="100" cy="88" r="34" fill="#f2c6a2"/>
+    <!-- hair -->
+    <path d="M100 48c22 0 34 14 34 32 0 5-1 10-3 14-2-14-8-20-16-22-9-2-19 1-27-4-4 8-9 13-15 15-1-4-2-8-2-12 0-16 11-23 29-23z" fill="#3c2e26"/>
+  </g>
+</svg>

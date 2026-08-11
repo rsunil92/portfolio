@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maya Ortega — Senior UX Designer</title>
+  <meta name="description" content="Portfolio of Maya Ortega, Senior UX Designer with 8 years of experience designing product experiences for fintech, health and SaaS teams." />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- ============ TOP NAV ============ -->
+  <header class="topbar" id="topbar">
+    <div class="topbar__inner container">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text" data-bind="profile.shortName"></span>
+      </a>
+
+      <nav class="nav" aria-label="Sections">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#work">Work</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#education">Education</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ PROFILE CARD ============ -->
+    <section class="container profile-wrap" aria-label="Profile">
+      <article class="card profile">
+        <div class="profile__cover" aria-hidden="true"></div>
+
+        <div class="profile__body">
+          <img class="profile__avatar" src="assets/img/avatar.svg" alt="" width="152" height="152" />
+
+          <div class="profile__head">
+            <div class="profile__identity">
+              <h1 class="profile__name">
+                <span data-bind="profile.name"></span>
+                <span class="verified" title="Verified profile" aria-label="Verified">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 1.8 3-.3 1 2.8 2.6 1.5-.9 2.9.9 2.9-2.6 1.5-1 2.8-3-.3L12 22l-2.4-1.8-3 .3-1-2.8L3 16.2l.9-2.9L3 10.4 5.6 8.9l1-2.8 3 .3z" class="verified__badge"/><path d="M8.6 12.2l2.3 2.3 4.5-4.6" class="verified__tick"/></svg>
+                </span>
+              </h1>
+              <p class="profile__headline" data-bind="profile.headline"></p>
+              <p class="profile__meta">
+                <span data-bind="profile.location"></span>
+                <span class="dot" aria-hidden="true">·</span>
+                <a href="#contact" class="link">Contact info</a>
+              </p>
+              <p class="profile__stats">
+                <strong data-bind="profile.yearsLabel"></strong> experience
+                <span class="dot" aria-hidden="true">·</span>
+                <strong data-bind="profile.followers"></strong> followers
+              </p>
+            </div>
+
+            <ul class="profile__companies" id="profileCompanies" aria-label="Current and previous"></ul>
+          </div>
+
+          <div class="profile__actions">
+            <a class="btn btn--primary" id="primaryCta" href="#contact">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M4 6l8 6 8-6"/></svg>
+              Message
+            </a>
+            <a class="btn btn--ghost" href="#work">View work</a>
+            <button class="btn btn--ghost" type="button" id="printCv">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11"/><path d="M8 11l4 4 4-4"/><path d="M4 20h16"/></svg>
+              Download CV
+            </button>
+          </div>
+
+          <div class="open-to" id="openTo">
+            <div class="open-to__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 12.5l2 2 4.2-4.4"/></svg>
+            </div>
+            <div>
+              <p class="open-to__title" data-bind="openTo.title"></p>
+              <p class="open-to__text" data-bind="openTo.text"></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="container layout">
+      <!-- ============ MAIN COLUMN ============ -->
+      <div class="column column--main">
+
+        <section class="card section" id="about">
+          <h2 class="section__title">About</h2>
+          <div class="prose" id="aboutBody"></div>
+          <ul class="metrics" id="metrics"></ul>
+        </section>
+
+        <section class="card section" id="experience">
+          <h2 class="section__title">Experience</h2>
+          <ol class="timeline" id="timeline"></ol>
+        </section>
+
+        <section class="card section" id="work">
+          <h2 class="section__title">Featured work</h2>
+          <p class="section__lede">Selected case studies. Each one links to the full write-up.</p>
+          <div class="projects" id="projects"></div>
+        </section>
+
+        <section class="card section" id="education">
+          <h2 class="section__title">Education</h2>
+          <ol class="entries" id="education-list"></ol>
+
+          <h3 class="section__subtitle">Certifications</h3>
+          <ul class="chips chips--outline" id="certifications"></ul>
+        </section>
+
+        <section class="card section" id="recommendations">
+          <h2 class="section__title">Recommendations</h2>
+          <div class="quotes" id="quotes"></div>
+        </section>
+      </div>
+
+      <!-- ============ SIDEBAR ============ -->
+      <aside class="column column--side">
+        <section class="card section" id="skills">
+          <h2 class="section__title">Skills</h2>
+          <ul class="skills" id="skills-list"></ul>
+        </section>
+
+        <section class="card section">
+          <h2 class="section__title">Tools</h2>
+          <ul class="chips" id="tools"></ul>
+        </section>
+
+        <section class="card section">
+          <h2 class="section__title">Languages</h2>
+          <ul class="entries entries--tight" id="languages"></ul>
+        </section>
+
+        <section class="card section" id="contact">
+          <h2 class="section__title">Contact</h2>
+          <ul class="contact" id="contact-list"></ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> <span data-bind="profile.name"></span>. Built with plain HTML, CSS and JavaScript.</p>
+      <a class="link" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
